@@ -4,8 +4,10 @@ _sum_ = 0
 
 if sell_pay.lower() == "buy":
     date = input("enter the date : ")
+    # sum_input_product
     purchases_unit = input("purchases unit : ")
     purchases_price = input("purchases price : ")
+    # add to inventory
     inventory = inventory + int(purchases_unit)
     _sum_ = _sum_ + float(purchases_price) * int(purchases_unit)
     print("date : " + date)
